@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EV3 Interface</title>
+        <script type="text/javascript" src="/home/robot/ev3server/jquery.js"></script>
+        <script type="text/javascript" src="/home/robot/ev3server/jquery-ui.js"></script>
+        <script type="text/javascript" src="/home/robot/ev3server/script.js"></script>
+        <link rel="stylesheet" href="/home/robot/ev3server/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="/home/robot/ev3server/style.css">
+    </head>
+    <body>
+        <div id="container"> 
+            <div id="header">
+  		        <div id="EV3Header" class="menu">
+                    <ul>
+<!--  			       <p>EV3 Interface</p>-->
+                    <li>EV3 Interface</li>
+                    <li>
+                        <a href="#">Programs <span class="arrow">&#9660;</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="" class="code1">Motor</a></li>
+                                <li><a href="" class="code2">Motor with Sensor</a></li>
+                                <li><a href="" class="code3">Motor with Sensor Loop</a></li>
+                            </ul>
+                    </li>
+                    </ul>    
+  		        </div>
+	        </div>
+            <div id="coding">
+                <div id="code1" class="codingArea">
+                        <a id="play" class="code1" href="#" title="Hit play button to run code"></a>
+                        <div id="motors">
+                            <img src="/home/robot/ev3server/motorControl.png"></img>
+                            <div id="values">
+                                <input class="code1" type="text" title="Steering" id="Steering" style="text-align:center;" placeholder="0">
+                                <input class="code1" type="text" title="Power" id="Power" style="text-align:center;" placeholder="0">
+                                <input class="code1" type="text" title="Seconds" id="Seconds" style="text-align:center;" placeholder="0">
+                                <input class="code1" type="text" title="Brake at End: True" id="brake" style="opacity:0;">
+                            </div>
+                        </div>
+                </div>
+                <div id="code2" class="codingArea" style="display:none">
+                    <p>More code coming soon!</p>
+                </div>
+                <div id="code3" class="codingArea" style="display:none">
+                    <p>More code coming soon!</p>
+                </div>
+	        </div>
+        </div>	
+    </body>
+</html>

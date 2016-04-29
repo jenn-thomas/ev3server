@@ -1,0 +1,183 @@
+.ui-tooltip {
+    background: white;
+    color: black;
+    border: black;
+    padding: 0;
+    opacity: 1;
+}
+      
+.ui-tooltip-content {
+    position: relative;
+    padding: 0.3em;
+    font-size: 10px;
+}
+      
+html {
+    height: 100%;
+}
+      
+body {
+    background-color: #fff;
+    font-family: sans-serif;
+    margin: 1%;
+    overflow: hidden;
+    height: 100%;
+}
+      
+h1 {
+    font-weight: normal;
+    font-size: 100%;
+}
+      
+#header{
+    display:block;
+	float:left;
+	height: 20%;
+    width: 90%;
+    background-color: lightblue;
+}
+      
+#container{
+    overflow: hidden;
+    float:left;
+    width: 98%;
+    margin-left:1%;
+    border:none;
+}
+      
+#coding{
+    clear:both;
+    height: 80%;
+    width: 90%;
+    overflow: hidden;
+    border: #ddd 1px solid;
+    overflow: scroll;
+}
+
+.codingArea{
+	margin-top: 5%;
+    margin-left: 5%;
+    height: 100%;
+    margin-bottom:10%;
+}
+
+#motors {
+    float:left;
+}
+      
+#play {
+    float:left;
+    height: 97px;
+    width: 75px;
+    background-image: url(playBtn.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: top;
+}
+      
+#play:hover {
+    background-position: bottom;
+}
+
+#values {
+    position: relative;
+    top:-43px;
+    left:55px;
+}
+      
+input[type="text"] {
+    width: 25px;
+    height: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    appearance: none;
+    border:none;
+    box-shadow: none;
+    border-radius: none;
+}
+
+li {
+    margin:0px;
+    list-style:none;
+    padding-bottom: 10px;
+    color:#0c2127;
+}
+
+#motorBox {
+    position: relative;
+    top:-120px;
+    left:150px;
+    width:35px;
+    height: 10px;
+}
+
+#selectBox {
+    position: relative;
+    top:-65px;
+    left:-34.5px;
+    width:40.5px;
+    height:27px;
+}
+
+.menu a {
+    transition:all linear 0.15s;
+    color:#0c2127;
+    text-decoration:none;
+}
+
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color: #246175;
+}
+
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding-left:20px;
+    display:inline-block;
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:lightblue;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:160%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 0.15s;
+    background:lightblue;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background: #c4e3ed;
+}

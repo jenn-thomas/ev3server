@@ -1,0 +1,10 @@
+[Unit]
+Description=EV3 Server
+After=multi-user.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/robot/ev3server/server.py
